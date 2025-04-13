@@ -1,98 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreya-Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shreya-Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 </head>
 <body>
+  <header>
+    <nav>
+      <div class="left"><img src="images/logo.png" alt="Logo"></div>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+      <div id="right">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#my expertise">My Expertise</a></li>
+          <li><a href="#MyPortfolio">My Portfolio</a></li>
+          <li><a href="#touch">touch</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection" id="home">
+      <div class="leftsection">
+        Hi, My name is <span class="purple">Shreya</span>,<br />
+        and I am an aspiring <br />
+        Web developer <br />
+        <span id="element"></span><br><br>
+        <a href="#contact" class="resume-btn">Get in touch</a>
+      </div>
+      <div class="rightsection">
+        
+        
+        <div class="floating-icons">
+          <i class="fab fa-html5 float-icon html-icon"></i>
+          <i class="fab fa-css3-alt float-icon css-icon"></i>
+          <i class="fab fa-js float-icon js-icon"></i>
+          <i class="fab fa-react float-icon react-icon"></i>
+        </div>
+        <img src="images/bg.png" id="bgimg" alt="Web Developer Illustration" />
+         
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="about">
+      <h1>About Me</h1>
+      <p>I'm a Computer Science Engineering student with a strong passion for front-end development. I enjoy crafting interactive, responsive, and visually appealing user interfaces using HTML, CSS, JavaScript, and modern frameworks like React. My interest in full-stack development has also led me to explore backend technologies, particularly Django, which I use to build robust and scalable web applications. With a creative mindset and a keen eye for design, I strive to build user-friendly digital experiences that blend functionality with aesthetics.</p>
+    </section>
+
+    <section id="my expertise">
+      <h1>My Expertise</h1>
+      <ul>
+        <li>Frontend: React, HTML, CSS, JavaScript – Crafting clean, responsive, and interactive UIs.</li>
+        <li>Databases: MySQL, MongoDB – Structuring and managing data efficiently.</li>
+        <li>Backend: Django, Node.js – Building robust APIs and server-side logic.</li>
+        <li>Design: Figma – Translating design ideas into functional interfaces.</li>
+        <li>Programming: C++ (DSA) – Strong problem-solving skills with data structures and algorithms.</li>
+      </ul>
+    </section>
+
+    <section class="portfolio--section" id="MyPortfolio">
+      <div class="portfolio--container-box">
+        <div class="portfolio--container">
+          <p class="sub--title">Recent Projects</p>
+          <h2 class="section--heading">My Portfolio</h2>
+        </div>
+        <div>
+          <a href="https://github.com/JBworks-GIT">
+            <button class="btn btn-github">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 33 33"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.3333 0.166748C7.50028 0.166748 0.333252 7.33378 0.333252 16.1667C0.333252 24.9997 7.50028 32.1667 16.3333 32.1667C25.1489 32.1667 32.3333 24.9997 32.3333 16.1667C32.3333 7.33378 25.1489 0.166748 16.3333 0.166748ZM26.9016 7.54202C28.8105 9.8674 29.9559 12.8348 29.9906 16.0452C29.5394 15.9585 25.0274 15.0387 20.4808 15.6114C20.3767 15.3858 20.2899 15.1428 20.1858 14.8999C19.9081 14.2405 19.5958 13.5637 19.2834 12.9216C24.3159 10.8739 26.6066 7.9238 26.9016 7.54202ZM16.3333 2.52684C19.804 2.52684 22.9797 3.82836 25.3919 5.96285C25.1489 6.30992 23.0838 9.06914 18.2248 10.8912C15.9862 6.77846 13.5047 3.41187 13.1229 2.89126C14.1467 2.64831 15.2227 2.52684 16.3333 2.52684ZM10.5199 3.811C10.8843 4.2969 13.3138 7.68085 15.5871 11.7068C9.20093 13.4075 3.56102 13.3728 2.95364 13.3728C3.83867 9.13855 6.70201 5.61577 10.5199 3.811ZM2.65863 16.1841C2.65863 16.0452 2.65863 15.9064 2.65863 15.7676C3.24865 15.7849 9.87772 15.8717 16.6977 13.824C17.0969 14.5875 17.4613 15.3684 17.8084 16.1493C17.6348 16.2014 17.4439 16.2535 17.2704 16.3055C10.2248 18.5788 6.47642 24.7914 6.16405 25.312C3.99485 22.8999 2.65863 19.6895 2.65863 16.1841ZM16.3333 29.8413C13.1749 29.8413 10.2595 28.7654 7.95147 26.9606C8.19442 26.4574 10.971 21.1125 18.676 18.4227C18.7107 18.4053 18.7281 18.4053 18.7628 18.388C20.689 23.3684 21.47 27.5506 21.6782 28.748C20.0296 29.4595 18.2248 29.8413 16.3333 29.8413ZM23.9515 27.4986C23.8127 26.6656 23.0838 22.6743 21.2964 17.7632C25.5828 17.0864 29.3311 18.1971 29.7997 18.3533C29.2097 22.1537 27.0231 25.4335 23.9515 27.4986Z"
+                  fill="currentColor"
+                />
+              </svg>
+              Visit My GitHub
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="portfolio--section--container">
+        <div class="portfolio--section--card">
+          <div class="portfolio--section--img">
+            <img src="images/project1.png" alt="Project 1" />
+          </div>
+          <div class="portfolio--section--card--content">
+            <h3 class="portfolio--section--title">Project Title</h3>
+            <p class="text-md">Project description goes here.</p>
+            <p class="text-sm portfolio--link">
+              <a href="https://github.com/project-link" target="_blank" rel="noopener noreferrer">
+                Visit on GitHub
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="touch">
+      <h1>touch</h1>
+      <p>You can download my touch below:</p>
+      <div class="touch-links">
+        <a href="https://drive.google.com/file/d/1NGM1k8v4Gj5T5v0iUPEtvAvp-9l0_InW/view?usp=drive_link" rel="noopener noreferrer" download class="download-btn" target="_blank">Download touch</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <form action="https://script.google.com/macros/s/AKfycbwEreszkuDCFgfoAxCCrJzlFwfNMse7PKK3hjDg8yI7jj5R7Ll1L_o4XZnVuWLAekkR/exec" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>Shreya Kumari</h2>
+        <p>Frontend Developer | UI/UX Enthusiast</p>
+        <p>&copy; 2025 All rights reserved.</p>
+      </div>
+      <div class="footer-right">
+        <h3>Connect with Me</h3>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://instagram.com/your-instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:your-email@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
   
-    <header>
-        <nav>
-          <div class="left">Shreya's Portfolio</div>
-          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
-          <div id="right">
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact Me</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-    
-      <main>
-        <section class="firstsection" id="home">
-          <div class="leftsection">
-            Hi, My name is <span class="purple">Shreya</span>,<br />
-            and I am an aspiring <br />
-            Web developer <br />
-            <span id="element"></span>
-          </div>
-          <div class="rightsection">
-            <img src="images/bg.png" alt="Web Developer Illustration" />
-          </div>
-        </section>
-    
-        <hr />
-    
-        <section id="about">
-          <h1>About Me</h1>
-          <p>I'm a Computer Science Engineering student with a strong passion for front-end development. I enjoy crafting interactive, responsive, and visually appealing user interfaces using HTML, CSS, JavaScript, and modern frameworks like React. My interest in full-stack development has also led me to explore backend technologies, particularly Django, which I use to build robust and scalable web applications. With a creative mindset and a keen eye for design, I strive to build user-friendly digital experiences that blend functionality with aesthetics.</p>
-        </section>
-    
-        <section id="services">
-          <h1>Services</h1>
-          <ul>
-            <li>Frontend Web Development</li>
-            <li>Responsive UI Design</li>
-            <li>Portfolio Website Development</li>
-            <li>Full Stack Project Development (with Django)</li>
-            <li>Tour & Travel Web Pages (with Booking Functionality)</li>
-          </ul>
-        </section>
-    
-        <section id="projects">
-          <h1>Projects</h1>
-          <ul>
-            <li><strong>Peer Review System:</strong> A full-stack web app built using Django and React for academic peer evaluations.</li>
-            <li><strong>Portfolio Website:</strong> This personal website to showcase my work and journey.</li>
-            <li><strong>Event Management App:</strong> A mini project created during my time with the Youth Capital department.</li>
-            <li><strong>Travel Booking Website:</strong> A tour & travel site with dynamic booking features and responsive design.</li>
-          </ul>
-        </section>
-    
-        <section id="contact">
-          <h1>Contact Me</h1>
-          <form action="https://script.google.com/macros/s/AKfycbwEreszkuDCFgfoAxCCrJzlFwfNMse7PKK3hjDg8yI7jj5R7Ll1L_o4XZnVuWLAekkR/exec" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </section>
-      </main>
-    
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-      <script>
-        var typed = new Typed('#element', {
-          strings: ['Frontend Developer', 'Web Developer', 'UI and UX Designer'],
-          typeSpeed: 50,
-          backSpeed: 30,
-          loop: true
-        });
-    
-        function toggleMenu() {
-            const navList = document.querySelector('#right ul');
-            navList.classList.toggle('active');
-        }
-      </script>
-    
+  
+
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+  
 </body>
 </html>
