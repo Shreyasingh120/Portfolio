@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreya-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">Shreya's Portfolio</div>
+          <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+          <div id="right">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    
+      <main>
+        <section class="firstsection" id="home">
+          <div class="leftsection">
+            Hi, My name is <span class="purple">Shreya</span>,<br />
+            and I am an aspiring <br />
+            Web developer <br />
+            <span id="element"></span>
+          </div>
+          <div class="rightsection">
+            <img src="images/bg.png" alt="Web Developer Illustration" />
+          </div>
+        </section>
+    
+        <hr />
+    
+        <section id="about">
+          <h1>About Me</h1>
+          <p>I'm a Computer Science Engineering student with a strong passion for front-end development. I enjoy crafting interactive, responsive, and visually appealing user interfaces using HTML, CSS, JavaScript, and modern frameworks like React. My interest in full-stack development has also led me to explore backend technologies, particularly Django, which I use to build robust and scalable web applications. With a creative mindset and a keen eye for design, I strive to build user-friendly digital experiences that blend functionality with aesthetics.</p>
+        </section>
+    
+        <section id="services">
+          <h1>Services</h1>
+          <ul>
+            <li>Frontend Web Development</li>
+            <li>Responsive UI Design</li>
+            <li>Portfolio Website Development</li>
+            <li>Full Stack Project Development (with Django)</li>
+            <li>Tour & Travel Web Pages (with Booking Functionality)</li>
+          </ul>
+        </section>
+    
+        <section id="projects">
+          <h1>Projects</h1>
+          <ul>
+            <li><strong>Peer Review System:</strong> A full-stack web app built using Django and React for academic peer evaluations.</li>
+            <li><strong>Portfolio Website:</strong> This personal website to showcase my work and journey.</li>
+            <li><strong>Event Management App:</strong> A mini project created during my time with the Youth Capital department.</li>
+            <li><strong>Travel Booking Website:</strong> A tour & travel site with dynamic booking features and responsive design.</li>
+          </ul>
+        </section>
+    
+        <section id="contact">
+          <h1>Contact Me</h1>
+          <form action="https://script.google.com/macros/s/AKfycbwEreszkuDCFgfoAxCCrJzlFwfNMse7PKK3hjDg8yI7jj5R7Ll1L_o4XZnVuWLAekkR/exec" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+    
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed('#element', {
+          strings: ['Frontend Developer', 'Web Developer', 'UI and UX Designer'],
+          typeSpeed: 50,
+          backSpeed: 30,
+          loop: true
+        });
+    
+        function toggleMenu() {
+            const navList = document.querySelector('#right ul');
+            navList.classList.toggle('active');
+        }
+      </script>
+    
+</body>
+</html>
