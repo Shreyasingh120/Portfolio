@@ -29,10 +29,10 @@ navList.addEventListener('click', function (e) {
 
 const portfolioData = [
     {
-      title: "Peer Review System",
-      description: "A full-stack web app built using Django and React for academic peer evaluations.",
-      image: "images/project1.png",
-      link: "https://github.com/project1-link"
+      title: "Hungry-Heaven",
+      description: "A Online Food Ordering System with a user-friendly interface.",
+      image: "images/hungry.png",
+      link: "https://github.com/Shreyasingh120/Hungry-Heaven"
     },
     {
       title: "Portfolio Website",
@@ -41,17 +41,12 @@ const portfolioData = [
       link: "https://github.com/project2-link"
     },
     {
-      title: "Event Management App",
-      description: "A mini project created during my time with the Youth Capital department.",
+      title: "Styling",
+      description: "An online website created for window shopping.",
       image: "images/project3.png",
-      link: "https://github.com/project3-link"
+      link: "https://github.com/Shreyasingh120/Frontend---Styling-Project"
     },
-    {
-      title: "Travel Booking Website",
-      description: "A tour & travel site with dynamic booking features and responsive design.",
-      image: "images/project4.png",
-      link: "https://github.com/project4-link"
-    }
+    
   ];
   
   // Function to generate portfolio sections
