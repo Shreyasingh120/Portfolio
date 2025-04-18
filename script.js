@@ -30,51 +30,50 @@ navList.addEventListener('click', function (e) {
 const portfolioData = [
     {
       title: "Hungry-Heaven",
-      description: "A Online Food Ordering System with a user-friendly interface.",
+      description: "An Online Food Ordering System with a user-friendly interface that allows customers to browse menus, select food items, and place orders seamlessly",
       image: "images/hungry.png",
-      link: "https://github.com/Shreyasingh120/Hungry-Heaven"
+      githubLink: "https://github.com/Shreyasingh120/Hungry-Heaven",
+      deployedLink: "https://hungry-heaven-six.vercel.app/" 
     },
     {
-      title: "Portfolio Website",
-      description: "This personal website to showcase my work and journey.",
-      image: "images/project2.png",
-      link: "https://github.com/project2-link"
+      title: "Tic-Tac-Toe",
+      description: "The interface is clean and responsive, ensuring smooth gameplay on both desktop and mobile devices.",
+      image: "images/tic-tac.png",
+      githubLink: "https://github.com/Shreyasingh120/Tic-Tac-Toe-Game",
+      deployedLink: "https://tic-tac-toe-game-azure-chi.vercel.app/" 
     },
     {
       title: "Styling",
-      description: "An online website created for window shopping.",
-      image: "images/project3.png",
-      link: "https://github.com/Shreyasingh120/Frontend---Styling-Project"
+      description: "The Styling E-Commerce Website is a modern, responsive online store interface designed to deliver a seamless shopping experience.",
+      image: "images/styling.png",
+      githubLink: "https://github.com/Shreyasingh120/Frontend---Styling-Project",
+      deployedLink: "https://frontend-styling-project.vercel.app"
     },
-    
-  ];
-  
-  // Function to generate portfolio sections
-  function generatePortfolioSections(data) {
+];
+
+function generatePortfolioSections(data) {
     const portfolioContainer = document.querySelector(".portfolio--section--container");
-  
+
     data.forEach((item) => {
-      const card = document.createElement("div");
-      card.classList.add("portfolio--section--card");
-  
-      card.innerHTML = `
-        <div class="portfolio--section--img">
-          <img src="${item.image}" alt="${item.title}" />
-        </div>
-        <div class="portfolio--section--card--content">
-          <h3 class="portfolio--section--title">${item.title}</h3>
-          <p class="text-md">${item.description}</p>
-          <p class="text-sm portfolio--link">
-            <a href="${item.link}" target="_blank" rel="noopener noreferrer">
-              Visit on GitHub
-            </a>
-          </p>
-        </div>
-      `;
-  
-      portfolioContainer.appendChild(card);
-    });
-  }
-  
-  // Call the function to generate portfolio sections
-  generatePortfolioSections(portfolioData);
+        const card = document.createElement("div");
+        card.classList.add("portfolio--section--card");
+
+        card.innerHTML = `
+            <div class="portfolio--section--img">
+                <a href="${item.deployedLink}" target="_blank" rel="noopener noreferrer">
+                    <img src="${item.image}" alt="${item.title}" />
+                </a>
+            </div>
+            <div class="portfolio--section--card--content">
+                <h3 class="portfolio--section--title">${item.title}</h3>
+                <p class="text-md">${item.description}</p>
+                <p class="text-sm portfolio--link">
+                    <a href="${item.githubLink}" target="_blank" rel="noopener noreferrer">
+                        Visit on GitHub
+                    </a>
+                </p>
+            </div>
+        `;
+
+        portfolioContainer.appendChild(c
+generatePortfolioSections(portfolioData);

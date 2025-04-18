@@ -160,10 +160,9 @@ button:hover {
   background-color: #ff3b77;
 }
 
-/* Updated Floating Icons */
 .floating-icons {
   position: absolute;
-  top: -20px; /* Adjusted to place icons on top of the image */
+  top: -20px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -173,7 +172,7 @@ button:hover {
 }
 
 .float-icon {
-  width: 80px; /* Increased size */
+  width: 80px; 
   height: 80px;
   animation: float 6s ease-in-out infinite;
 }
@@ -196,7 +195,7 @@ button:hover {
   50% { transform: translateY(-15px) rotate(10deg); }
 }
 
-/* Portfolio Section */
+
 .portfolio--section {
   padding: 60px 20px;
   background-color: #111;
@@ -251,6 +250,12 @@ button:hover {
   overflow: hidden;
   max-width: 300px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.portfolio--section--card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Add a deeper shadow */
 }
 
 .portfolio--section--img img {
@@ -284,15 +289,17 @@ button:hover {
   text-decoration: underline;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
   }
-  .menu-toggle {
-    display: block;
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
   }
   #right ul {
     flex-direction: column;
@@ -385,7 +392,7 @@ button:hover {
   color: #6c63ff;
 }
 
-/* Larger screens */
+
 @media (min-width: 768px) {
   .footer-content {
     flex-direction: row;
