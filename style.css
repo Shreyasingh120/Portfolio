@@ -235,6 +235,7 @@ button:hover {
 
 .portfolio--section--container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
@@ -286,7 +287,7 @@ button:hover {
   text-decoration: underline;
 }
 
-
+/* First, set the default styles for the navigation */
 #right ul {
   display: flex;
   gap: 3vw;
@@ -299,7 +300,7 @@ button:hover {
   box-shadow: none;
 }
 
-
+/* Mobile styles */
 @media (max-width: 1000px) {
   nav {
     flex-direction: column;
@@ -428,7 +429,7 @@ button:hover {
   }
 }
 
-
+/* Add this new media query for larger screens */
 @media (min-width: 1001px) {
   .menu-toggle {
     display: none;
@@ -527,6 +528,14 @@ button:hover {
 
   .rightsection {
     width: 100%;
+  }
+  .portfolio--section--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap;
+    gap: 20px; */
+    justify-content: center;
   }
 
   .rightsection img {
